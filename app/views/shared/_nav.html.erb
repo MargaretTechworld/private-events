@@ -1,0 +1,32 @@
+<div class="nav">
+  <h1>PrivateEvent</h1>
+
+  <div class="logo-div">
+  <div class="search-container">
+    <span class="search-icon">
+    <%= image_tag 'search.svg' %>
+    </span>
+    <input type="text" placeholder="search events" class="search-input">
+  </div>
+  </div>
+
+  <%= link_to "create an event" %>
+
+  <div class="tick">
+  <%= image_tag 'like.svg' %>
+  <p>Like</p>
+  </div>
+
+  <div class="tick">
+  <%= image_tag 'tickets.svg' %>
+  <p>Tickets</p>
+  </div>
+  <div class="background-design">
+  <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class:"background-design" %>
+  </div>
+</div>
+  # <div class="profile-nav">
+  # <%= image_tag 'profile.svg', class: "profile-icon" %>
+  # <p>margarettechworld@gmail.com</p>
+  # <%= image_tag 'down_arrow.svg' %>
+  # </div>

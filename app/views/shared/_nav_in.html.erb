@@ -1,0 +1,29 @@
+<div class="nav">
+  <h1>PrivateEvent</h1>
+
+  <div class="logo-div">
+  <div class="search-container">
+    <span class="search-icon">
+    <%= image_tag 'search.svg' %>
+    </span>
+    <input type="text" placeholder="search events" class="search-input-in">
+  </div>
+  </div>
+
+<div class="background-design">
+  <%= link_to "find events" %>
+</div>
+<div class="background-design">
+  <%= link_to "create events", class:"background-design" %>
+</div>
+  <div class="help-center background-design">
+  <p>help center</p>
+  <%= image_tag 'down_arrow.svg'%>
+  </div>
+  <div class="background-design">
+  <%= link_to "Log In", new_user_session_path, class:"background-design" %>
+  </div>
+  <div class="background-design">
+  <%= link_to "Sign Up", new_user_registration_path, class:"background-design" %>
+  </div>
+</div>
