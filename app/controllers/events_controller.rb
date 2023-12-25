@@ -7,5 +7,18 @@ class EventsController < ApplicationController
     @event = Event.new
   end
 
-  def create; end
+  def create
+    @event = Event.new(event_params)
+    if @event.save
+      redirect_to @event, notice: "Event was successfully created."
+    else
+      render :new
+    end
+  end
+
+  private
+
+  def event_params
+    params.require(:event).permit(:name, :date, :description)
+  end
 end
