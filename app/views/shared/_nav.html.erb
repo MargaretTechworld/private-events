@@ -10,7 +10,7 @@
   </div>
   </div>
 
-  <%= link_to "create an event" %>
+  <%= link_to "create an event", new_event_path %>
 
   <div class="tick">
   <%= image_tag 'like.svg' %>
@@ -25,8 +25,3 @@
   <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class:"background-design" %>
   </div>
 </div>
-  # <div class="profile-nav">
-  # <%= image_tag 'profile.svg', class: "profile-icon" %>
-  # <p>margarettechworld@gmail.com</p>
-  # <%= image_tag 'down_arrow.svg' %>
-  # </div>
